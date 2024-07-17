@@ -90,3 +90,38 @@ body{
     width: 100%;
 }
 
+/* Styles habits section */
+.habits-title-container{
+    max-width:670px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+}
+.habits-card-container{
+    justify-content: space-around;
+    align-items: center;
+}
+.card{
+    width: 231px;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 3rem;
+}
+.habits-cards-title{
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-top: 1.75rem;
+}
+.habits-cards-subtitle{
+    font-size: 0.85rem;
+    opacity: 0.7;
+    margin-top: 0.5rem;
+}
+.habits-image img{
+    border-radius: 50%;
+}
+
+/* styles run section */
