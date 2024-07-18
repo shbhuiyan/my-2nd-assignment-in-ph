@@ -1,0 +1,22 @@
+/* responsive for small device */
+@media screen and (max-width:576px) {
+    .nav-items{
+        display: none;
+    }
+    .hambar{
+        display: block;
+    }
+    .banner-title{
+        font-size: 3.5rem;
+    }
+    .btn-container{
+        justify-content: center;
+    }
+    .habits-card-container,.banner,.run-container{
+        flex-direction: column;
+    }
+    .run-btn{
+        width: 100%;
+    }
+
+}
