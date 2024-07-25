@@ -280,7 +280,7 @@ form>input,select{
 
 
 /* team section styles */
-/* .team-cards-container{
+.team-cards-container{
     background-color: rgba(34, 34, 34, 1);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -308,7 +308,7 @@ form>input,select{
     position: absolute;
     top: 80%;
     left: 5%;
-} */
+}
 
 /* footer section styles */
 /* footer{
