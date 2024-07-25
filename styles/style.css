@@ -16,11 +16,12 @@ body{
     border: 2px solid red;
     box-sizing: border-box;
 }
-header,main{
+header,.habits-container,.exercises-container,.team-container{
     max-width: 1120px;
     margin: 0 auto;
-    /* border: 2px solid green; */
+    border: 2px solid green;
 }
+
 .flex{
     display: flex;
 }
@@ -28,19 +29,29 @@ header,main{
     font-size: 1.125rem;
     font-weight: 600;
     background-color: #E6533C;
+    margin-top: 20px;
     padding: 10px 20px;
     border: none;
     border-radius: 45px;
     cursor: pointer;
 }
+.titles-container{
+    max-width: 670px;
+    margin: 80px auto;
+    text-align: center;
+}
 .section-title{
     font-size: 3rem;
-    font-weight: 800;
+    font-weight: 900;
 }
 .section-subtitle{
     opacity: 0.7;
-    margin-bottom: 1.75rem;
-    margin-top: 1rem;
+    margin-top: 16px;
+}
+.card-subtitle{
+    font-size: 0.85rem;
+    opacity: 0.7;
+    margin-top: 8px;
 }
 
 /* navbar section styles */
@@ -56,7 +67,7 @@ header,main{
     font-style: italic;
 }
 .nav-items{
-    padding-right: 1rem;
+    padding-right: 16px;
     border: 1px solid rgba(80, 80, 80, 0.5);
     border-radius: 45px;
 }
@@ -68,6 +79,10 @@ header,main{
     text-decoration: none;
     margin-left: 3rem;
 }
+.nav-btn{
+    margin: 0%;
+}
+
 
 /* banner section styles */
 .banner{
@@ -82,27 +97,27 @@ header,main{
     font-size: 5rem;
     font-weight: 800;
     margin-bottom: 1.75rem;
-    line-height: 4.5rem;
+    line-height: 100%;
 }
 .shape{
     background: none;
     font-family: "Miama";
     font-weight: 100;
-    font-size: 6rem;
+    font-size: 8rem;
 }
 .btn-container{
     display: flex;
     align-items: center;
     gap: 15px;
 }
-.image{
-    width: 50%;
+.banner-image{
+    position: relative;
 }
 .banner-image img{
     width: 100%;
-    position: relative;
+    
 }
-/* .Badge-1{
+.Badge-1{
     padding: 10px;
     justify-content:center;
     align-items: center;
@@ -111,8 +126,7 @@ header,main{
     border-radius: 12px;
     backdrop-filter: blur(10px);
     position: absolute;
-    bottom: 40px;
-    right: 450px;
+    bottom: 20%;
     
 }
 .play-icon{
@@ -139,57 +153,49 @@ header,main{
     border-radius: 12px;
     backdrop-filter: blur(10px);
     position: absolute;
-    top: 350px;
-    right: 200px;
-} */
+    top:30%;
+    right:0%;
+}    
 
 /* Styles habits section */
-.habits-title-container{
-    /* width:670px; */
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 100px;
-}
 .habits-card-container{
     justify-content: space-around;
     align-items: center;
+    gap: 40px;
 }
-.card{
-    width: 231px;
+.habits-card{
+    max-width: 231px;
     margin: 0 auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 3rem;
 }
 .habits-cards-title{
     font-size: 1.125rem;
     font-weight: 600;
-    margin-top: 1.75rem;
+    margin-top: 20px;
 }
-.habits-cards-subtitle{
-    font-size: 0.85rem;
-    opacity: 0.7;
-    margin-top: 0.5rem;
-}
+
 .habits-image img{
     border-radius: 50%;
 }
 
 /* styles run section */
 .run-container{
+    max-width: calc(1120px - 25px);
+    margin: 0 auto;
     margin-top: 100px;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
     background: rgba(34, 34, 34, 1);
-    padding: 30px;
+    padding: 20px;
     border-radius: 18px;
 }
-/* .run-title-container{
-    width:400px;
-} */
+.run-title-container{
+    max-width:400px;
+}
 .run-btn{
     padding:10px 40px;
 }
@@ -201,3 +207,141 @@ header,main{
     width: 100%;
     border-radius: 18px;
 }
+
+/* Training section styles */
+
+
+/* BMI calculator / challenge part section styles */
+.bmi-calculator-container{
+    max-width: 1440px;
+    margin-bottom: 80px;
+}
+.bmi-titles{
+    text-align: start;
+}
+
+.chart-calculator-container{
+    justify-content: space-evenly;
+    align-items:center;
+    gap: 40px;
+    padding: 50px 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid crimson;
+}
+.chart-title{
+    font-weight: 700;
+    font-size: 1.75rem;
+    margin-bottom: 50px;
+}
+table{
+    border-collapse:collapse;
+}
+table td,th{
+    padding: 10px 20px;
+    text-align: start;
+    border: 1px solid rgb(78, 78, 78);
+}
+table td{
+    opacity: 0.7;
+}
+.calculate-container{
+    max-width: 550px;
+}
+.calculate-title{
+    font-weight: 700;
+    font-size: 1.75rem;
+}
+form{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 32px;
+}
+form>input,select{
+    padding: 12px 40px 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color:rgba(0, 0, 0, 0.591);
+    color: gray;
+    text-align: left;
+}
+.calculat-container>.section-subtitle{
+    font-size: 0.85rem;
+}
+#activity{
+    grid-column:span 2 ;
+}
+
+.calc-btn{
+    padding: 14px 70px;
+}
+
+
+/* team section styles */
+/* .team-cards-container{
+    background-color: rgba(34, 34, 34, 1);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+    border-radius: 18px;
+}
+.team-cards-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+}
+.card-name{
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.team-card{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.name-titles{
+    position: absolute;
+    top: 80%;
+    left: 5%;
+} */
+
+/* footer section styles */
+/* footer{
+    margin: 80px auto 0 auto;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 70px 0;
+
+}
+.footer-1{
+    max-width: 440px;
+}
+.footer-2 li{
+    list-style: none;
+    margin-top: 20px;
+    opacity: 0.7;
+}
+.footer-2 .foot-title{
+    font-weight: 700;
+    font-size: 1.75rem;
+}
+footer>p, .footer{
+    max-width: 1120px;
+}
+footer>p{
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    margin: 0 auto;
+    padding: 35px 0;
+    opacity: 0.7;
+} */

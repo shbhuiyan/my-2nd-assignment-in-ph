@@ -1,22 +1,52 @@
 /* responsive for small device */
 @media screen and (max-width:576px) {
+    body{
+        margin:0 15px;
+    }
+
+    /* Shared styles */
+    .habits-card-container,.banner,.run-container,.chart-calculator-container,.footer{
+        flex-direction: column;
+    }
+    .section-title{
+        font-size: 2.5rem;
+    }
+
+    /* navbar styles */
     .nav-items{
         display: none;
     }
     .hambar{
         display: block;
     }
+
+    /* banner styles */
     .banner-title{
         font-size: 3.5rem;
     }
     .btn-container{
         justify-content: center;
     }
-    .habits-card-container,.banner,.run-container{
-        flex-direction: column;
-    }
+    
+    /* run styles */
     .run-btn{
         width: 100%;
     }
+    form{
+        grid-template-columns: repeat(2,165px);
+    }
+    .calculat-container{
+        text-align: center;
+    }
 
+    /* team styles */
+    .team-cards-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    /* footer styles */
+    .footer{
+        gap: 25px;
+        align-items: flex-start;
+    }
 }
