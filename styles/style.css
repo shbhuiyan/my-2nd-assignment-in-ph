@@ -37,7 +37,7 @@ body{
 }
 .titles-container{
     max-width: 670px;
-    margin: 80px auto;
+    margin: 70px auto;
     text-align: center;
 }
 .section-title{
@@ -256,6 +256,40 @@ header{
     background: rgba(0, 71, 255, 0.3);
 }
 
+/* creative/parallax section styles */
+.creative-container{
+    margin-top:3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    min-height: 80vh;
+    background: linear-gradient(180.00deg, rgb(16, 16, 16) -19.5%,rgba(16, 16, 16, 0.38) 100%),url(../images/parallax\ background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.content{
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+.quote{
+    font-size: 4rem;
+    margin: 50px;
+}
+.creative-container p{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.quote-title{
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
 /* BMI calculator / challenge part section styles */
 .bmi-calculator-container{
     max-width: 1440px;
@@ -264,7 +298,6 @@ header{
 .bmi-titles{
     text-align: start;
 }
-
 .chart-calculator-container{
     justify-content: space-evenly;
     align-items:center;
@@ -371,12 +404,18 @@ footer{
 .footer-1{
     max-width: 440px;
 }
-.footer-2 li{
+.footer-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+}
+.footer-3 li{
     list-style: none;
     margin-top: 20px;
     opacity: 0.7;
 }
-.footer-2 .foot-title{
+.footer-3 .foot-title{
     font-weight: 700;
     font-size: 1.75rem;
 }

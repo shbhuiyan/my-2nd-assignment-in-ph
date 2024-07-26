@@ -5,7 +5,7 @@
     }
 
     /* Shared styles */
-    .habits-card-container,.banner,.run-container,.chart-calculator-container,.footer{
+    .banner,.habits-card-container,.run-container,.chart-calculator-container,.footer{
         flex-direction: column;
     }
     .section-title{
@@ -55,5 +55,24 @@
     .footer{
         gap: 25px;
         align-items: flex-start;
+    }
+}
+
+
+
+/* responsive for medium device */
+@media screen and (min-width:576px) and (max-width:992px){
+    .banner,.chart-calculator-container,.footer{
+        flex-direction: column;
+    }
+    .habits-card-container,.team-cards-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .bmi-titles{
+        text-align: center;
+    }
+    .footer{
+        gap: 6rem;
     }
 }
