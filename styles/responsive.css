@@ -1,7 +1,7 @@
 /* responsive for small device */
 @media screen and (max-width:576px) {
-    body{
-        margin:0 15px;
+    header,.habits-container,.exercises-container,.team-container,.bmi-titles,footer{
+        padding:0 15px;
     }
 
     /* Shared styles */
@@ -42,6 +42,9 @@
     }
 
     /* bmi styles */
+    .chart-calculator-container{
+        padding:50px 15px;
+    }
     .calculate-container{
         text-align: center;
     }
