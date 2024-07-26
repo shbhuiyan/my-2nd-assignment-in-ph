@@ -16,7 +16,7 @@ body{
     border: 2px solid red;
     box-sizing: border-box;
 }
-header,.habits-container,.exercises-container,.team-container{
+.navbar,.banner,.habits-container,.exercises-container,.team-container{
     max-width: 1120px;
     margin: 0 auto;
     border: 2px solid green;
@@ -54,12 +54,15 @@ header,.habits-container,.exercises-container,.team-container{
     margin-top: 8px;
 }
 
+header{
+    background: linear-gradient(180.00deg, rgb(119 119 119 / 23%), rgb(17 17 17 / 34%) 100%);
+}
+
 /* navbar section styles */
 .navbar{
     justify-content:space-between;
     align-items: center;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
+    padding: 2.5rem 0%;
 }
 .nav-title{
     font-weight: 800;
@@ -184,8 +187,7 @@ header,.habits-container,.exercises-container,.team-container{
 /* styles run section */
 .run-container{
     max-width: calc(1120px - 25px);
-    margin: 0 auto;
-    margin-top: 100px;
+    margin: 100px auto;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
@@ -208,8 +210,51 @@ header,.habits-container,.exercises-container,.team-container{
     border-radius: 18px;
 }
 
-/* Training section styles */
-
+/* exercises/optional section styles */
+.exercises-card-container{
+    margin-top: 55px;
+}
+.exercises-card-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    font-weight: 600;
+}
+.row-1,.row-2{
+    display: grid;
+    grid-template-columns: .6fr 1fr .7fr;
+}
+.row-2{
+    grid-template-columns: 1fr .7fr .7fr;
+}
+.exercises-card-container .pictures{
+    position: relative;
+}
+.exercises-card-container img{
+    width: 100%;
+    height: 100%;
+}
+.overlay-1,.overlay-2,.overlay-3,.overlay-4,.overlay-5,.overlay-6{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.overlay-1{
+    background: rgba(6, 255, 210, 0.5);
+}
+.overlay-2{
+    background: rgba(255, 0, 0, 0.3);
+}
+.overlay-3,.overlay-4{
+    background: rgba(0, 0, 0, 0.5);
+}
+.overlay-5{
+    background: rgba(66, 255, 0, 0.3);
+}
+.overlay-6{
+    background: rgba(0, 71, 255, 0.3);
+}
 
 /* BMI calculator / challenge part section styles */
 .bmi-calculator-container{

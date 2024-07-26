@@ -35,7 +35,14 @@
     form{
         grid-template-columns: repeat(2,165px);
     }
-    .calculat-container{
+
+    /* exercises/optional styles */
+    .row-1,.row-2{
+        grid-template-columns:repeat(1,1fr);
+    }
+
+    /* bmi styles */
+    .calculate-container{
         text-align: center;
     }
 
