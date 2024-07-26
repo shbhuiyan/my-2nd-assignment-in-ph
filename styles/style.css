@@ -216,7 +216,6 @@ header{
     position: absolute;
     top: 50%;
     left: 30%;
-    /* transform: translate(-20%); */
     font-weight: 600;
 }
 .row-1,.row-2{
